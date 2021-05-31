@@ -39,7 +39,7 @@ class CharacterDataContainerViewModelTests: XCTestCase {
     
     func testCharacterViewModel() throws {
         let firstCharacter = self.characterListVM.characterListVM.first
-        XCTAssertEqual(firstCharacter?.id, 1009351)
+        XCTAssertEqual(firstCharacter?.characterId, 1009351)
         XCTAssertEqual(firstCharacter?.name, "Hulk")
         XCTAssertEqual(firstCharacter?.description, "Caught in a gamma bomb explosion while trying...")
         let firstURL = firstCharacter?.urls.first

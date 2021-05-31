@@ -7,7 +7,25 @@
 		<key>MarvelApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>950A7D5B2664E63100F6655A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>950A7D712664E63200F6655A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>950A7D7C2664E63200F6655A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

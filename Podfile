@@ -12,6 +12,7 @@ target 'MarvelApp' do
   pod 'Alamofire', '~> 5.4', :inhibit_warnings => true
   pod 'SwiftLint', '~> 0.43', :inhibit_warnings => true
   pod 'CryptoSwift', '~> 1.4', :inhibit_warnings => true
+  pod 'SDWebImage', '~> 5.11', :inhibit_warnings => true
 
   target 'MarvelAppTests' do
     inherit! :search_paths

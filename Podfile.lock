@@ -1,24 +1,30 @@
 PODS:
   - Alamofire (5.4.3)
   - CryptoSwift (1.4.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - CryptoSwift (~> 1.4)
+  - SDWebImage (~> 5.11)
   - SwiftLint (~> 0.43)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CryptoSwift
+    - SDWebImage
     - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: e65d76a6057f71da5116c70d4ab3d256cb3ba431
+PODFILE CHECKSUM: b708fe99badbb9b392481d659af8f4c15596e2c9
 
 COCOAPODS: 1.10.1
