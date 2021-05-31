@@ -4,8 +4,13 @@
 target 'MarvelApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  # ignore all warnings from all dependencies
+  inhibit_all_warnings!
+  
   # Pods for MarvelApp
+  pod 'Alamofire', '~> 5.4', :inhibit_warnings => true
+  pod 'SwiftLint', '~> 0.43', :inhibit_warnings => true
 
   target 'MarvelAppTests' do
     inherit! :search_paths
