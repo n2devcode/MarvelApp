@@ -35,14 +35,14 @@
                         <action selector="dismissBack:" destination="-1" eventType="touchUpInside" id="KQT-nQ-y1a"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_NOMBRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-ie-Iqq">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_NOMBRE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-ie-Iqq">
                     <rect key="frame" x="70" y="73.5" width="274" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfd-xD-Y2r">
-                    <rect key="frame" x="0.0" y="124" width="414" height="772"/>
+                    <rect key="frame" x="0.0" y="115" width="414" height="781"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </subviews>
@@ -50,9 +50,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Pl7-Nd-qHK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TAH-B8-TqJ"/>
+                <constraint firstItem="sfd-xD-Y2r" firstAttribute="top" secondItem="Kap-ie-Iqq" secondAttribute="bottom" constant="20" id="cDH-Hg-uwY"/>
                 <constraint firstItem="Pl7-Nd-qHK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fmT-FY-94t"/>
                 <constraint firstAttribute="bottom" secondItem="sfd-xD-Y2r" secondAttribute="bottom" id="gNn-lt-7FO"/>
-                <constraint firstItem="sfd-xD-Y2r" firstAttribute="top" secondItem="Pl7-Nd-qHK" secondAttribute="bottom" constant="20" id="i5a-pm-Kr3"/>
                 <constraint firstItem="Kap-ie-Iqq" firstAttribute="centerY" secondItem="Pl7-Nd-qHK" secondAttribute="centerY" id="jWr-KK-3k3"/>
                 <constraint firstAttribute="trailing" secondItem="sfd-xD-Y2r" secondAttribute="trailing" id="pys-KB-eMv"/>
                 <constraint firstItem="Kap-ie-Iqq" firstAttribute="leading" secondItem="Pl7-Nd-qHK" secondAttribute="trailing" constant="10" id="ueb-6u-qE5"/>

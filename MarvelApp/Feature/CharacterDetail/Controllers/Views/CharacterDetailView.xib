@@ -96,7 +96,9 @@ RGVzY3JpcGNpw7NuEDo
             </constraints>
             <connections>
                 <outlet property="characterDetailDescriptionLabel" destination="cx6-Xv-otM" id="Ifq-w9-4yk"/>
+                <outlet property="characterDetailDescriptionTitleLabel" destination="ITB-Ii-4Es" id="0uj-7X-8dG"/>
                 <outlet property="characterDetailImageView" destination="P7c-Q8-xuv" id="t4a-6X-AVc"/>
+                <outlet property="characterDetailURLLabel" destination="zoU-fz-p0e" id="9od-am-r5R"/>
                 <outlet property="characterDetailURLTableView" destination="1JF-jz-u6T" id="9Y7-Or-oo2"/>
                 <outlet property="heightTableViewConstraint" destination="8CF-5v-bCT" id="sDn-LW-pe0"/>
             </connections>
