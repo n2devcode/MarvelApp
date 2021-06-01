@@ -7,21 +7,16 @@
 
 import UIKit
 
-class CharacterListViewController: UIViewController {
+class CharacterListViewController: BaseViewController {
     @IBOutlet weak var characterListView: UIView!
     
     let characterDataContainerVM = CharacterDataContainerViewModel()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loadData()
-    }
-    
     @IBAction func clickBack(_ sender: Any) {
-        self.dismiss(animated: true)
+        gotoBack()
     }
     
-    func loadData() {
+    override func loadData() {
         showLoadView()
         characterDataContainerVM.getData {
             self.showCharacterTableView()
@@ -30,18 +25,15 @@ class CharacterListViewController: UIViewController {
         }
     }
     
-}
-
-extension CharacterListViewController: LoadViewProtocol, AddSubviewConstraintsProtocol {
-    private func showLoadView() {
+    override func showLoadView() {
         if let subview = self.loadView("LoadView") as? LoadView {
             self.addSubview(view: characterListView, subview: subview)
         }
     }
     
-    private func showErrorView() {
+    override func showErrorView() {
         if let subview = self.loadView("ErrorView") as? ErrorView {
-            subview.characterListVC = self
+            subview.characterVC = self
             self.addSubview(view: characterListView, subview: subview)
         }
     }

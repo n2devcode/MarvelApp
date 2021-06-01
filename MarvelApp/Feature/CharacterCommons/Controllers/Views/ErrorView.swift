@@ -9,10 +9,10 @@ import UIKit
 
 class ErrorView: UIView {
     
-    var characterListVC = CharacterListViewController()
+    var characterVC = BaseViewController()
 
     @IBAction func clickRetry(_ sender: Any) {
-        characterListVC.loadData()
+        characterVC.loadData()
     }
     
 }

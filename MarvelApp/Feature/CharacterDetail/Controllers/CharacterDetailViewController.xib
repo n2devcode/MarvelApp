@@ -9,9 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterListViewController" customModule="MarvelApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterDetailViewController" customModule="MarvelApp" customModuleProvider="target">
             <connections>
-                <outlet property="characterListView" destination="vGq-Be-nij" id="StC-d3-Tni"/>
+                <outlet property="characterDetailNameLabel" destination="Kap-ie-Iqq" id="gnn-vy-GEa"/>
+                <outlet property="characterDetailView" destination="sfd-xD-Y2r" id="WU1-dX-ItG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,27 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwV-ZI-4Rr">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl7-Nd-qHK">
                     <rect key="frame" x="20" y="64" width="40" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="HT4-Db-gzB"/>
-                        <constraint firstAttribute="width" constant="40" id="iRq-uA-CEp"/>
+                        <constraint firstAttribute="height" constant="40" id="6Yy-Wk-LWQ"/>
+                        <constraint firstAttribute="width" constant="40" id="ngs-0K-C8m"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal">
                         <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
                     </state>
                     <connections>
-                        <action selector="clickBack:" destination="-1" eventType="touchUpInside" id="sGg-gk-6Bm"/>
+                        <action selector="dismissBack:" destination="-1" eventType="touchUpInside" id="KQT-nQ-y1a"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAJES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-GH-D1n">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_NOMBRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kap-ie-Iqq">
                     <rect key="frame" x="70" y="73.5" width="274" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGq-Be-nij">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfd-xD-Y2r">
                     <rect key="frame" x="0.0" y="124" width="414" height="772"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
@@ -48,17 +49,17 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vGq-Be-nij" secondAttribute="trailing" id="Glz-Mz-lim"/>
-                <constraint firstItem="vwV-ZI-4Rr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="JBF-OB-NFB"/>
-                <constraint firstItem="vwV-ZI-4Rr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Vx1-8I-VY5"/>
-                <constraint firstAttribute="bottom" secondItem="vGq-Be-nij" secondAttribute="bottom" id="X4i-be-C5m"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xtg-GH-D1n" secondAttribute="trailing" constant="70" id="YCc-1J-Kyr"/>
-                <constraint firstItem="vGq-Be-nij" firstAttribute="top" secondItem="vwV-ZI-4Rr" secondAttribute="bottom" constant="20" id="bTh-oZ-kUP"/>
-                <constraint firstItem="vGq-Be-nij" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gXO-GA-Bww"/>
-                <constraint firstItem="Xtg-GH-D1n" firstAttribute="leading" secondItem="vwV-ZI-4Rr" secondAttribute="trailing" constant="10" id="q7Q-aV-Wyx"/>
-                <constraint firstItem="Xtg-GH-D1n" firstAttribute="centerY" secondItem="vwV-ZI-4Rr" secondAttribute="centerY" id="uOa-ks-uNL"/>
+                <constraint firstItem="Pl7-Nd-qHK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TAH-B8-TqJ"/>
+                <constraint firstItem="Pl7-Nd-qHK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fmT-FY-94t"/>
+                <constraint firstAttribute="bottom" secondItem="sfd-xD-Y2r" secondAttribute="bottom" id="gNn-lt-7FO"/>
+                <constraint firstItem="sfd-xD-Y2r" firstAttribute="top" secondItem="Pl7-Nd-qHK" secondAttribute="bottom" constant="20" id="i5a-pm-Kr3"/>
+                <constraint firstItem="Kap-ie-Iqq" firstAttribute="centerY" secondItem="Pl7-Nd-qHK" secondAttribute="centerY" id="jWr-KK-3k3"/>
+                <constraint firstAttribute="trailing" secondItem="sfd-xD-Y2r" secondAttribute="trailing" id="pys-KB-eMv"/>
+                <constraint firstItem="Kap-ie-Iqq" firstAttribute="leading" secondItem="Pl7-Nd-qHK" secondAttribute="trailing" constant="10" id="ueb-6u-qE5"/>
+                <constraint firstItem="sfd-xD-Y2r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z1s-8O-vHV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kap-ie-Iqq" secondAttribute="trailing" constant="70" id="ziO-eU-LR9"/>
             </constraints>
-            <point key="canvasLocation" x="-197" y="87"/>
+            <point key="canvasLocation" x="141" y="95"/>
         </view>
     </objects>
     <resources>

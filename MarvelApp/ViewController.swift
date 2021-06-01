@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBAction func clickShowCharacters(_ sender: Any) {
         if Utils.isConnectedToNetwork() {
