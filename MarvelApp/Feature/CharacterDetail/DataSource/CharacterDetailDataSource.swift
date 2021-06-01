@@ -12,8 +12,8 @@ import CryptoSwift
 class CharacterDetailDataSource: NSObject {
     
     func getResponse(characterId: Int,
-                           success succeed: (@escaping (CharacterModel) -> Void),
-                           failure fail: (@escaping () -> Void)) {
+                     success succeed: (@escaping (CharacterModel) -> Void),
+                     failure fail: (@escaping () -> Void)) {
         
         let url = "\(Constants.baseURL)/v1/public/characters/\(characterId)"
         
