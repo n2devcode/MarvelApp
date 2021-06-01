@@ -95,9 +95,10 @@ RGVzY3JpcGNpw7NuEDo
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XbQ-Rx-ivR" secondAttribute="bottom" id="Qz1-ae-jAB"/>
             </constraints>
             <connections>
-                <outlet property="characterDetailDescriptionLabel" destination="ITB-Ii-4Es" id="Uqj-zU-i2O"/>
+                <outlet property="characterDetailDescriptionLabel" destination="cx6-Xv-otM" id="Ifq-w9-4yk"/>
                 <outlet property="characterDetailImageView" destination="P7c-Q8-xuv" id="t4a-6X-AVc"/>
                 <outlet property="characterDetailURLTableView" destination="1JF-jz-u6T" id="9Y7-Or-oo2"/>
+                <outlet property="heightTableViewConstraint" destination="8CF-5v-bCT" id="sDn-LW-pe0"/>
             </connections>
             <point key="canvasLocation" x="71" y="95"/>
         </view>

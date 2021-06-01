@@ -12,15 +12,17 @@ class CharacterDetailViewController: BaseViewController {
     @IBOutlet weak var characterDetailView: UIView!
     
     let characterDetailVM = CharacterDetailViewModel()
-    var characterId = 0
+    
+    var character = CharacterViewModel()
     
     @IBAction func dismissBack(_ sender: Any) {
         gotoBack()
     }
     
     override func loadData() {
+        characterDetailNameLabel.text = character.name
         showLoadView()
-        characterDetailVM.getData(characterId: characterId) {
+        characterDetailVM.getData(characterId: character.characterId) {
             self.showCharacterTableView()
         } loadError: {
             self.showErrorView()
@@ -42,6 +44,8 @@ class CharacterDetailViewController: BaseViewController {
     
     private func showCharacterTableView() {
         if let subview = self.loadView("CharacterDetailView") as? CharacterDetailView {
+            subview.characterDetailVC = self
+            subview.characterVM = characterDetailVM.characterVM
             self.addSubview(view: characterDetailView, subview: subview)
         }
     }
