@@ -18,6 +18,6 @@ class UtilsTests: XCTestCase {
         let noSecureURL = "http://www.google.es"
         let secureURL = "https://www.google.es"
         XCTAssertEqual(noSecureURL.secureURL(), secureURL)
-        
+        XCTAssertEqual(secureURL.secureURL(), secureURL)
     }
 }

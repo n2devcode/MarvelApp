@@ -39,16 +39,21 @@ class CharacterDetailDataSource: NSObject {
             .validate(statusCode: 200..<300)
             .responseDecodable(of: CharacterDataWrapperModel.self) { (response) in
                 
-                if let dataWrapper = response.value,
-                   dataWrapper.code == 200,
-                   let dataContainer = dataWrapper.data,
-                   let result = dataContainer.results,
-                   let detail = result.first {
-                    succeed(detail)
-                    return
+                switch response.result {
+                case .success(let value):
+                    
+                    if value.code == 200,
+                       let dataContainer = value.data,
+                       let result = dataContainer.results,
+                       let detail = result.first {
+                        succeed(detail)
+                        return
+                    }
+                    
+                    fail()
+                case .failure(_):
+                    fail()
                 }
-                
-                fail()
             }
     }
     

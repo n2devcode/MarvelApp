@@ -48,4 +48,15 @@ class CharacterDataContainerViewModelTests: XCTestCase {
         XCTAssertEqual(firstCharacter?.imageURLString, "https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg")
     }
     
+    func testCharacterNilViewModel() throws {
+        let secondCharacter = self.characterListVM.characterListVM[1]
+        XCTAssertEqual(secondCharacter.characterId, -1)
+        XCTAssertEqual(secondCharacter.name, "-")
+        XCTAssertEqual(secondCharacter.description, "-")
+        let firstURL = secondCharacter.urls.first
+        XCTAssertEqual(firstURL?.type, nil)
+        XCTAssertEqual(firstURL?.url, nil)
+        XCTAssertEqual(secondCharacter.imageURLString, "-")
+    }
+    
 }

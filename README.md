@@ -1,13 +1,24 @@
 # MarvelApp
 
-He usado el patrón MVVM.
+## Funcionalidad
 
-He utilitzado una vista para acceder a la lista de los personajes porque no quiero que el usuario se quede bloqueado mientras se descargan los datos de la red. Además, sería un buen sitio para añadir "Ver cómics", "Ver series"...
+1. Listar los personajes de Marvel
+2. Navegar al detalle de un personaje concreto con la llamada del detalle
 
-Lo que implica a los pods:
-- SwiftLint: Para la correcta implementación
-- Alamofire: Para obtener la información de la web
-- CryptoSwift: Para el md5() necesario para hacer la llamada
-- SDWebImage: Para la carga de las imágenes
+## Especificaciones
 
-Me he dado cuenta al hacer la llamada del detalle que dentro del primer listado ya tengo el detalle de todos los personajes, por tanto, veo innecesario hacer la segunda llamada. Pero como comentamos en el correo, he hecho igualmente la implementación del detalle haciendo la llamada.
+1. Hacer uso de la API de Marvel (​https://developer.marvel.com/docs​)
+2. Obtener el listado de personajes (GET: /v1/public/characters)
+3. Obtener el detalle de un personaje (GET: /v1/public/characters/{characterId})
+
+## Requerimientos
+
+● Requerido usar Xcode - Swift
+
+● Se puede hacer uso de frameworks y librerías de terceros.
+
+● No bloquee la interfaz de usuario mientras descarga los datos de la red.
+
+● Utilizar SwiftLint.
+
+● Implementar un poco de tests.
